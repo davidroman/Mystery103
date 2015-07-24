@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vJT-DG-kGg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Mystery103" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,148 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWy-zY-SWv">
+                                <rect key="frame" x="28" y="28" width="543" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Mystery">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hwk-U0-Rap"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iA1-3d-Fgx">
+                                <rect key="frame" x="28" y="82" width="543" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Ujh-wL-DRO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaF-3a-xmx" customClass="BigButtonView" customModule="Mystery103" customModuleProvider="target">
+                                <rect key="frame" x="250" y="350" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4A0-Mv-FLG"/>
+                                    <constraint firstAttribute="width" constant="100" id="moZ-i7-uj7"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.27296386936584027" green="0.90952873444609461" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="BigButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E9a-Vq-Oim"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ln-Bt-FjG" customClass="BigButtonView" customModule="Mystery103" customModuleProvider="target">
+                                <rect key="frame" x="275" y="480" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="BQS-HP-bed"/>
+                                    <constraint firstAttribute="height" constant="50" id="Vdo-Pq-ZTG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="1" green="0.2956412424" blue="0.22724858210000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="BigMinusButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tum-do-OQ6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leM-2b-6ew">
+                                <rect key="frame" x="250" y="215" width="106" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="7p2-0o-eDa"/>
+                                    <constraint firstAttribute="height" constant="34" id="qog-qc-Xjm"/>
+                                </constraints>
+                                <state key="normal" title="NEXT screen">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Jby-8v-dj6" kind="show" id="fbo-kT-JQk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="MWy-zY-SWv" secondAttribute="trailing" constant="13" id="561-kJ-b5g"/>
+                            <constraint firstItem="leM-2b-6ew" firstAttribute="top" secondItem="iA1-3d-Fgx" secondAttribute="bottom" constant="99" id="AwH-tG-HfD"/>
+                            <constraint firstAttribute="centerY" secondItem="KaF-3a-xmx" secondAttribute="centerY" constant="-100" id="Bjm-IA-DBi"/>
+                            <constraint firstItem="MWy-zY-SWv" firstAttribute="leading" secondItem="iA1-3d-Fgx" secondAttribute="leading" id="Cgc-Dz-uj4"/>
+                            <constraint firstItem="iA1-3d-Fgx" firstAttribute="top" secondItem="MWy-zY-SWv" secondAttribute="bottom" constant="8" symbolic="YES" id="EJ5-h8-Zo5"/>
+                            <constraint firstItem="0Ln-Bt-FjG" firstAttribute="top" secondItem="KaF-3a-xmx" secondAttribute="bottom" constant="30" id="Gou-Ax-xUh"/>
+                            <constraint firstItem="leM-2b-6ew" firstAttribute="leading" secondItem="KaF-3a-xmx" secondAttribute="leading" id="JaH-bD-ekt"/>
+                            <constraint firstAttribute="centerX" secondItem="0Ln-Bt-FjG" secondAttribute="centerX" id="Whl-7m-dRa"/>
+                            <constraint firstItem="MWy-zY-SWv" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="28" id="a6W-1v-km5"/>
+                            <constraint firstItem="MWy-zY-SWv" firstAttribute="trailing" secondItem="iA1-3d-Fgx" secondAttribute="trailing" id="aRf-Im-GoG"/>
+                            <constraint firstItem="MWy-zY-SWv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="12" id="qD6-TO-Okh"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iA1-3d-Fgx" secondAttribute="bottom" constant="484" id="vce-es-S4H"/>
+                            <constraint firstAttribute="centerX" secondItem="KaF-3a-xmx" secondAttribute="centerX" id="x0h-Bn-i6Q"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="iKc-iT-S1Z"/>
+                    <connections>
+                        <outlet property="Hello" destination="iA1-3d-Fgx" id="S1u-tD-YIa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="298" y="116"/>
+        </scene>
+        <!--Other View Controller-->
+        <scene sceneID="JJP-ZO-oha">
+            <objects>
+                <viewController id="Jby-8v-dj6" customClass="OtherViewController" customModule="Mystery103" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xf9-kG-XJa"/>
+                        <viewControllerLayoutGuide type="bottom" id="T78-Ci-7Vi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O8G-wj-PSE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The counter was tapped ??? times" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWy-9G-klQ">
+                                <rect key="frame" x="166" y="161" width="267" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KWy-9G-klQ" secondAttribute="centerX" constant="0.5" id="HcE-KB-iXI"/>
+                            <constraint firstItem="KWy-9G-klQ" firstAttribute="top" secondItem="xf9-kG-XJa" secondAttribute="bottom" constant="97" id="P8l-CR-5BJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qjt-Es-B95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gZd-aj-jcS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vJT-DG-kGg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ePg-4M-9jt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="xLL-E4-fPh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wpa-vv-2f1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="124"/>
         </scene>
     </scenes>
 </document>

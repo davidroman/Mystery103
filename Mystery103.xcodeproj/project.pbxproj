@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FA433331B60C1900027CCF0 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA433321B60C1900027CCF0 /* OtherViewController.swift */; };
 		0FC1FBB11B4BB53300DFD7DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1FBB01B4BB53300DFD7DA /* AppDelegate.swift */; };
 		0FC1FBB31B4BB53300DFD7DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1FBB21B4BB53300DFD7DA /* ViewController.swift */; };
 		0FC1FBB61B4BB53300DFD7DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC1FBB41B4BB53300DFD7DA /* Main.storyboard */; };
 		0FC1FBB81B4BB53300DFD7DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC1FBB71B4BB53300DFD7DA /* Images.xcassets */; };
 		0FC1FBBB1B4BB53300DFD7DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FC1FBB91B4BB53300DFD7DA /* LaunchScreen.xib */; };
 		0FC1FBC71B4BB53300DFD7DA /* Mystery103Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1FBC61B4BB53300DFD7DA /* Mystery103Tests.swift */; };
+		0FC1FBD11B52720400DFD7DA /* BigButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1FBD01B52720400DFD7DA /* BigButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FA433321B60C1900027CCF0 /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OtherViewController.swift; path = Mystery103/OtherViewController.swift; sourceTree = "<group>"; };
 		0FC1FBAB1B4BB53300DFD7DA /* Mystery103.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mystery103.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC1FBAF1B4BB53300DFD7DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FC1FBB01B4BB53300DFD7DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		0FC1FBC01B4BB53300DFD7DA /* Mystery103Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mystery103Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC1FBC51B4BB53300DFD7DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FC1FBC61B4BB53300DFD7DA /* Mystery103Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mystery103Tests.swift; sourceTree = "<group>"; };
+		0FC1FBD01B52720400DFD7DA /* BigButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		0FC1FBA21B4BB53300DFD7DA = {
 			isa = PBXGroup;
 			children = (
+				0FA433321B60C1900027CCF0 /* OtherViewController.swift */,
 				0FC1FBAD1B4BB53300DFD7DA /* Mystery103 */,
 				0FC1FBC31B4BB53300DFD7DA /* Mystery103Tests */,
 				0FC1FBAC1B4BB53300DFD7DA /* Products */,
@@ -80,7 +85,7 @@
 				0FC1FBB01B4BB53300DFD7DA /* AppDelegate.swift */,
 				0FC1FBB21B4BB53300DFD7DA /* ViewController.swift */,
 				0FC1FBB41B4BB53300DFD7DA /* Main.storyboard */,
-				0FC1FBB71B4BB53300DFD7DA /* Images.xcassets */,
+				0FC1FBD01B52720400DFD7DA /* BigButtonView.swift */,
 				0FC1FBB91B4BB53300DFD7DA /* LaunchScreen.xib */,
 				0FC1FBAE1B4BB53300DFD7DA /* Supporting Files */,
 			);
@@ -90,6 +95,7 @@
 		0FC1FBAE1B4BB53300DFD7DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0FC1FBB71B4BB53300DFD7DA /* Images.xcassets */,
 				0FC1FBAF1B4BB53300DFD7DA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -213,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FC1FBB31B4BB53300DFD7DA /* ViewController.swift in Sources */,
+				0FA433331B60C1900027CCF0 /* OtherViewController.swift in Sources */,
+				0FC1FBD11B52720400DFD7DA /* BigButtonView.swift in Sources */,
 				0FC1FBB11B4BB53300DFD7DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +413,7 @@
 				0FC1FBCC1B4BB53300DFD7DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FC1FBCD1B4BB53300DFD7DA /* Build configuration list for PBXNativeTarget "Mystery103Tests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				0FC1FBCF1B4BB53300DFD7DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
