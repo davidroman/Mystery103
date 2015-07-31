@@ -1,18 +1,14 @@
 //
-//  OtherViewController.swift
+//  OtherTwoViewController.swift
 //  Mystery103
 //
-//  Created by David Romanowski on 7/22/15.
+//  Created by David Romanowski on 7/31/15.
 //  Copyright (c) 2015 David Romanowski. All rights reserved.
 //
 
 import UIKit
 
-
-
-class OtherViewController: UIViewController {
-    
-    var viewmyRandom = 0
+class OtherTwoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +22,14 @@ class OtherViewController: UIViewController {
     }
     
 
-    @IBOutlet weak var RandomOutlet: UILabel!
+    var viewMyRandom = 0
+    
+    @IBOutlet weak var RandomLabel: UILabel!
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-       RandomOutlet.text = "The counter was tapped \(viewmyRandom) times."
+        RandomLabel.text = "The counter was tapped \(viewMyRandom) times."
         
     }
     

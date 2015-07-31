@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FA433331B60C1900027CCF0 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA433321B60C1900027CCF0 /* OtherViewController.swift */; };
+		0FA433351B6C0A1B0027CCF0 /* OtherTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA433341B6C0A1B0027CCF0 /* OtherTwoViewController.swift */; };
 		0FC1FBB11B4BB53300DFD7DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1FBB01B4BB53300DFD7DA /* AppDelegate.swift */; };
 		0FC1FBB31B4BB53300DFD7DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1FBB21B4BB53300DFD7DA /* ViewController.swift */; };
 		0FC1FBB61B4BB53300DFD7DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC1FBB41B4BB53300DFD7DA /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		0FA433321B60C1900027CCF0 /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OtherViewController.swift; path = Mystery103/OtherViewController.swift; sourceTree = "<group>"; };
+		0FA433341B6C0A1B0027CCF0 /* OtherTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OtherTwoViewController.swift; path = Mystery103/OtherTwoViewController.swift; sourceTree = "<group>"; };
 		0FC1FBAB1B4BB53300DFD7DA /* Mystery103.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mystery103.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC1FBAF1B4BB53300DFD7DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FC1FBB01B4BB53300DFD7DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		0FC1FBA21B4BB53300DFD7DA = {
 			isa = PBXGroup;
 			children = (
+				0FA433341B6C0A1B0027CCF0 /* OtherTwoViewController.swift */,
 				0FA433321B60C1900027CCF0 /* OtherViewController.swift */,
 				0FC1FBAD1B4BB53300DFD7DA /* Mystery103 */,
 				0FC1FBC31B4BB53300DFD7DA /* Mystery103Tests */,
@@ -221,6 +224,7 @@
 				0FC1FBB31B4BB53300DFD7DA /* ViewController.swift in Sources */,
 				0FA433331B60C1900027CCF0 /* OtherViewController.swift in Sources */,
 				0FC1FBD11B52720400DFD7DA /* BigButtonView.swift in Sources */,
+				0FA433351B6C0A1B0027CCF0 /* OtherTwoViewController.swift in Sources */,
 				0FC1FBB11B4BB53300DFD7DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

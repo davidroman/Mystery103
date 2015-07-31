@@ -8,6 +8,8 @@
 
 import UIKit
 
+var myRandom = 8
+
 class ViewController: UIViewController {
     
     
@@ -35,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Button() {
-        let myRandom  = Int(arc4random_uniform(UInt32(100)))
+        myRandom  = Int(arc4random_uniform(UInt32(100)))
         println("The random number is: \(myRandom)")
         switch myRandom {
         case 0...9:
@@ -54,15 +56,36 @@ class ViewController: UIViewController {
 
     }
     
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowRandomSegue"
+        {
+            if let destinationVC = segue.destinationViewController as? OtherTwoViewController{
+                   destinationVC.viewMyRandom = myRandom
+            }
+        }
+    }
+    
+    /*
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        println("In Segue")
     // Get the new view controller using 
-        segue.destinationViewController as? OtherViewController
+        // if segue.identifier == "MySegue" {
+          //  println("segue is MySegue")
+            //segue.destinationViewController as? OtherViewController
+            if let destinationVC : OtherViewController = segue.destinationViewController as? OtherViewController{
+                println("Value of myRandom just before setting viewmyRandom is: \(myRandom)")
+                destinationVC.viewmyRandom = myRandom
+        }
     // Pass the selected object to the new view controller.
-    }
+    // if segue.identifier ... }
 
 
+  }
+ */
+    
 }
-

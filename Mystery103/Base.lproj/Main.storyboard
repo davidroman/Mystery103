@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vJT-DG-kGg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXv-va-cYf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -81,7 +81,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Jby-8v-dj6" kind="show" id="fbo-kT-JQk"/>
+                                    <segue destination="9AV-9n-sG0" kind="show" identifier="ShowRandomSegue" id="y6n-Dw-Gvn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,22 +109,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="298" y="116"/>
+            <point key="canvasLocation" x="1011" y="114"/>
         </scene>
-        <!--Other View Controller-->
-        <scene sceneID="JJP-ZO-oha">
+        <!--Other Two View Controller-->
+        <scene sceneID="Cne-Ke-Jxj">
             <objects>
-                <viewController id="Jby-8v-dj6" customClass="OtherViewController" customModule="Mystery103" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9AV-9n-sG0" customClass="OtherTwoViewController" customModule="Mystery103" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xf9-kG-XJa"/>
-                        <viewControllerLayoutGuide type="bottom" id="T78-Ci-7Vi"/>
+                        <viewControllerLayoutGuide type="top" id="F1h-Ja-qed"/>
+                        <viewControllerLayoutGuide type="bottom" id="tTc-JW-wQf"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="O8G-wj-PSE">
+                    <view key="view" contentMode="scaleToFill" id="3Fd-5g-WlH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The counter was tapped ??? times" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWy-9G-klQ">
-                                <rect key="frame" x="166" y="161" width="267" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Random number is ???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAF-mv-JMO">
+                                <rect key="frame" x="184" y="90" width="269" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -132,32 +132,35 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KWy-9G-klQ" secondAttribute="centerX" constant="0.5" id="HcE-KB-iXI"/>
-                            <constraint firstItem="KWy-9G-klQ" firstAttribute="top" secondItem="xf9-kG-XJa" secondAttribute="bottom" constant="97" id="P8l-CR-5BJ"/>
+                            <constraint firstAttribute="centerX" secondItem="KAF-mv-JMO" secondAttribute="centerX" constant="-18.5" id="4tF-aR-0oZ"/>
+                            <constraint firstAttribute="centerY" secondItem="KAF-mv-JMO" secondAttribute="centerY" constant="183.5" id="iak-kX-i2Y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="RandomLabel" destination="KAF-mv-JMO" id="U5K-wU-0KI"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qjt-Es-B95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpm-Cw-MCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="953" y="116"/>
+            <point key="canvasLocation" x="1684" y="114"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="gZd-aj-jcS">
+        <scene sceneID="X9P-Gb-IKO">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vJT-DG-kGg" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vXv-va-cYf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ePg-4M-9jt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MLu-2M-33y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="xLL-E4-fPh"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="F1L-oX-Uhz"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wpa-vv-2f1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJu-NA-UYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-262" y="124"/>
+            <point key="canvasLocation" x="309" y="109"/>
         </scene>
     </scenes>
 </document>
