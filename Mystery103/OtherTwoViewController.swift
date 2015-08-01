@@ -12,6 +12,21 @@ class OtherTwoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var leftswipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        var rightswipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        var upswipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        var downswipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        
+        leftswipe.direction = .Left
+        rightswipe.direction = .Right
+        upswipe.direction = .Up
+        downswipe.direction = .Down
+        
+        view.addGestureRecognizer(leftswipe)
+        view.addGestureRecognizer(rightswipe)
+        view.addGestureRecognizer(upswipe)
+        view.addGestureRecognizer(downswipe)
 
         // Do any additional setup after loading the view.
     }
@@ -21,6 +36,25 @@ class OtherTwoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var DirectionLabel: UILabel!
+    
+    func handleSwipes(sender: UISwipeGestureRecognizer) {
+        if (sender.direction == .Up) {
+            DirectionLabel.text = "UP"
+        }
+        
+        if (sender.direction == .Right) {
+            DirectionLabel.text = "RIGHT"
+        }
+        
+        if (sender.direction == .Down) {
+            DirectionLabel.text = "DOWN"
+        }
+        
+        if (sender.direction == .Left) {
+            DirectionLabel.text = "LEFT"
+        }
+    }
 
     var viewMyRandom = 0
     
@@ -29,7 +63,7 @@ class OtherTwoViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        RandomLabel.text = "The counter was tapped \(viewMyRandom) times."
+        RandomLabel.text = "The Random number is: \(viewMyRandom)."
         
     }
     

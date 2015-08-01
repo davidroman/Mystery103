@@ -129,14 +129,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Direction is ??" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7B-20-mUt">
+                                <rect key="frame" x="232" y="513" width="123" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KAF-mv-JMO" secondAttribute="centerX" constant="-18.5" id="4tF-aR-0oZ"/>
+                            <constraint firstAttribute="centerX" secondItem="q7B-20-mUt" secondAttribute="centerX" constant="6.5" id="PJz-g8-SoY"/>
                             <constraint firstAttribute="centerY" secondItem="KAF-mv-JMO" secondAttribute="centerY" constant="183.5" id="iak-kX-i2Y"/>
+                            <constraint firstAttribute="centerY" secondItem="q7B-20-mUt" secondAttribute="centerY" constant="-227" id="uOG-rJ-I9B"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="DirectionLabel" destination="q7B-20-mUt" id="qug-7a-0yk"/>
                         <outlet property="RandomLabel" destination="KAF-mv-JMO" id="U5K-wU-0KI"/>
                     </connections>
                 </viewController>
