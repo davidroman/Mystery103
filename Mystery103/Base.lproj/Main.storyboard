@@ -48,7 +48,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="0.27296386936584027" green="0.90952873444609461" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.45444238449597774" green="0.81818826127656985" blue="0.87230383831521741" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -123,25 +123,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Random number is ???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAF-mv-JMO">
-                                <rect key="frame" x="184" y="90" width="269" height="53"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Random number is ???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAF-mv-JMO">
+                                <rect key="frame" x="139" y="88" width="216" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="8g4-h9-5ne"/>
+                                    <constraint firstAttribute="width" constant="216" id="g6T-RG-4IB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Direction is ??" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7B-20-mUt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direction is ??" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7B-20-mUt">
                                 <rect key="frame" x="232" y="513" width="123" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="1YI-dA-UOU"/>
+                                    <constraint firstAttribute="width" constant="123" id="Eud-hF-Rar"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9t5-jS-RRZ" customClass="DrawArchView" customModule="Mystery103" customModuleProvider="target">
+                                <rect key="frame" x="185" y="185" width="230" height="230"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KAF-mv-JMO" secondAttribute="centerX" constant="-18.5" id="4tF-aR-0oZ"/>
-                            <constraint firstAttribute="centerX" secondItem="q7B-20-mUt" secondAttribute="centerX" constant="6.5" id="PJz-g8-SoY"/>
-                            <constraint firstAttribute="centerY" secondItem="KAF-mv-JMO" secondAttribute="centerY" constant="183.5" id="iak-kX-i2Y"/>
-                            <constraint firstAttribute="centerY" secondItem="q7B-20-mUt" secondAttribute="centerY" constant="-227" id="uOG-rJ-I9B"/>
+                            <constraint firstItem="KAF-mv-JMO" firstAttribute="trailing" secondItem="q7B-20-mUt" secondAttribute="trailing" id="2fZ-4a-TJg"/>
+                            <constraint firstItem="KAF-mv-JMO" firstAttribute="top" secondItem="F1h-Ja-qed" secondAttribute="bottom" constant="24" id="5OH-mO-giu"/>
+                            <constraint firstAttribute="centerY" secondItem="q7B-20-mUt" secondAttribute="centerY" constant="-227" id="Vgr-bD-y1L"/>
+                            <constraint firstAttribute="centerX" secondItem="9t5-jS-RRZ" secondAttribute="centerX" id="Xuc-Ne-OJm"/>
+                            <constraint firstAttribute="centerX" secondItem="q7B-20-mUt" secondAttribute="centerX" constant="6.5" id="dFQ-6c-aEG"/>
+                            <constraint firstAttribute="centerY" secondItem="KAF-mv-JMO" secondAttribute="centerY" constant="183" id="eD6-mr-e7m"/>
+                            <constraint firstItem="9t5-jS-RRZ" firstAttribute="top" secondItem="KAF-mv-JMO" secondAttribute="bottom" constant="39" id="iXj-Bn-Uzl"/>
                         </constraints>
                     </view>
                     <connections>

@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         println("Plus button")
         Hello.font = UIFont.boldSystemFontOfSize(28.0)
     }
-    
+ 
     @IBAction func BigMinusButton(sender: BigButtonView) {
         println("Minus button")
         Hello.font = UIFont.systemFontOfSize(16.0)

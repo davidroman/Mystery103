@@ -41,18 +41,22 @@ class OtherTwoViewController: UIViewController {
     func handleSwipes(sender: UISwipeGestureRecognizer) {
         if (sender.direction == .Up) {
             DirectionLabel.text = "UP"
+            self.view.backgroundColor = UIColor.greenColor()
         }
         
         if (sender.direction == .Right) {
             DirectionLabel.text = "RIGHT"
+            self.view.backgroundColor = UIColor.blueColor()
         }
         
         if (sender.direction == .Down) {
             DirectionLabel.text = "DOWN"
+            self.view.backgroundColor = UIColor.redColor()
         }
         
         if (sender.direction == .Left) {
             DirectionLabel.text = "LEFT"
+            self.view.backgroundColor = UIColor.yellowColor()
         }
     }
 
