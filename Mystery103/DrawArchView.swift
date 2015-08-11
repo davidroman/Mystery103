@@ -13,7 +13,7 @@ let π:CGFloat = CGFloat(M_PI)
 
 @IBDesignable class DrawArchView: UIView {
     
-    @IBInspectable var counter: Int = 5
+    @IBInspectable var counter: Int = 8
     @IBInspectable var outlineColor: UIColor = UIColor.blueColor()
     @IBInspectable var ArchColor: UIColor = UIColor.greenColor()
     

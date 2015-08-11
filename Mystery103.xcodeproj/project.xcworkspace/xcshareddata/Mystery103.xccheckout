@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DC5D4163-5F77-42CA-87BD-5CCBA7B65C90</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mystery103</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AE3B3008C256CE35A3984714A97950835BA85FCF</key>
+		<string>github.com:davidroman/Mystery103.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mystery103.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AE3B3008C256CE35A3984714A97950835BA85FCF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:davidroman/Mystery103.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AE3B3008C256CE35A3984714A97950835BA85FCF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AE3B3008C256CE35A3984714A97950835BA85FCF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Mystery103</string>
+		</dict>
+	</array>
+</dict>
+</plist>

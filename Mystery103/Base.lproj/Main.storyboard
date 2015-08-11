@@ -123,16 +123,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Random number is ???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAF-mv-JMO">
-                                <rect key="frame" x="139" y="88" width="216" height="58"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="8g4-h9-5ne"/>
-                                    <constraint firstAttribute="width" constant="216" id="g6T-RG-4IB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direction is ??" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7B-20-mUt">
                                 <rect key="frame" x="232" y="513" width="123" height="28"/>
                                 <constraints>
@@ -155,16 +145,39 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kv7-x2-hOV">
+                                <rect key="frame" x="227" y="450" width="111" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="xc9-Sh-ukW"/>
+                                </constraints>
+                                <state key="normal" title="Next Screen">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0PJ-By-kpN" kind="show" identifier="DrawCircle" id="Bfc-SF-Dms"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="The Random number is ???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAF-mv-JMO">
+                                <rect key="frame" x="139" y="88" width="216" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="8g4-h9-5ne"/>
+                                    <constraint firstAttribute="width" constant="216" id="g6T-RG-4IB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KAF-mv-JMO" firstAttribute="trailing" secondItem="q7B-20-mUt" secondAttribute="trailing" id="2fZ-4a-TJg"/>
                             <constraint firstItem="KAF-mv-JMO" firstAttribute="top" secondItem="F1h-Ja-qed" secondAttribute="bottom" constant="24" id="5OH-mO-giu"/>
+                            <constraint firstItem="Kv7-x2-hOV" firstAttribute="top" secondItem="9t5-jS-RRZ" secondAttribute="bottom" constant="35" id="HXu-aV-Ium"/>
                             <constraint firstAttribute="centerY" secondItem="q7B-20-mUt" secondAttribute="centerY" constant="-227" id="Vgr-bD-y1L"/>
                             <constraint firstAttribute="centerX" secondItem="9t5-jS-RRZ" secondAttribute="centerX" id="Xuc-Ne-OJm"/>
                             <constraint firstAttribute="centerX" secondItem="q7B-20-mUt" secondAttribute="centerX" constant="6.5" id="dFQ-6c-aEG"/>
                             <constraint firstAttribute="centerY" secondItem="KAF-mv-JMO" secondAttribute="centerY" constant="183" id="eD6-mr-e7m"/>
                             <constraint firstItem="9t5-jS-RRZ" firstAttribute="top" secondItem="KAF-mv-JMO" secondAttribute="bottom" constant="39" id="iXj-Bn-Uzl"/>
+                            <constraint firstAttribute="centerY" secondItem="Kv7-x2-hOV" secondAttribute="centerY" constant="-164" id="tLs-QJ-7x8"/>
                         </constraints>
                     </view>
                     <connections>
@@ -174,7 +187,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpm-Cw-MCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1684" y="114"/>
+            <point key="canvasLocation" x="1683" y="114"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uCd-LX-rrY">
+            <objects>
+                <viewController id="0PJ-By-kpN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NkI-Nw-0je" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2336" y="114"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X9P-Gb-IKO">
