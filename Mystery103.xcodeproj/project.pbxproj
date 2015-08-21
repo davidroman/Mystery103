@@ -11,6 +11,8 @@
 		0FA433351B6C0A1B0027CCF0 /* OtherTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA433341B6C0A1B0027CCF0 /* OtherTwoViewController.swift */; };
 		0FA433371B6D7CF90027CCF0 /* DrawArchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA433361B6D7CF90027CCF0 /* DrawArchView.swift */; };
 		0FA433391B75D7E90027CCF0 /* DrawCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA433381B75D7E90027CCF0 /* DrawCircleView.swift */; };
+		0FA4333B1B79CEEA0027CCF0 /* 2010-10-09 14.56.59.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FA4333A1B79CEEA0027CCF0 /* 2010-10-09 14.56.59.jpg */; };
+		0FA4333F1B806C150027CCF0 /* DesertImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4333E1B806C150027CCF0 /* DesertImageViewController.swift */; };
 		0FC1FBB11B4BB53300DFD7DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1FBB01B4BB53300DFD7DA /* AppDelegate.swift */; };
 		0FC1FBB31B4BB53300DFD7DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1FBB21B4BB53300DFD7DA /* ViewController.swift */; };
 		0FC1FBB61B4BB53300DFD7DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC1FBB41B4BB53300DFD7DA /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		0FA433341B6C0A1B0027CCF0 /* OtherTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OtherTwoViewController.swift; path = Mystery103/OtherTwoViewController.swift; sourceTree = "<group>"; };
 		0FA433361B6D7CF90027CCF0 /* DrawArchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawArchView.swift; path = Mystery103/DrawArchView.swift; sourceTree = "<group>"; };
 		0FA433381B75D7E90027CCF0 /* DrawCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawCircleView.swift; path = Mystery103/DrawCircleView.swift; sourceTree = "<group>"; };
+		0FA4333A1B79CEEA0027CCF0 /* 2010-10-09 14.56.59.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2010-10-09 14.56.59.jpg"; sourceTree = "<group>"; };
+		0FA4333E1B806C150027CCF0 /* DesertImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesertImageViewController.swift; sourceTree = "<group>"; };
 		0FC1FBAB1B4BB53300DFD7DA /* Mystery103.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mystery103.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC1FBAF1B4BB53300DFD7DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FC1FBB01B4BB53300DFD7DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				0FC1FBB71B4BB53300DFD7DA /* Images.xcassets */,
+				0FA4333A1B79CEEA0027CCF0 /* 2010-10-09 14.56.59.jpg */,
+				0FA4333E1B806C150027CCF0 /* DesertImageViewController.swift */,
 				0FC1FBAF1B4BB53300DFD7DA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -210,6 +216,7 @@
 				0FC1FBB61B4BB53300DFD7DA /* Main.storyboard in Resources */,
 				0FC1FBBB1B4BB53300DFD7DA /* LaunchScreen.xib in Resources */,
 				0FC1FBB81B4BB53300DFD7DA /* Images.xcassets in Resources */,
+				0FA4333B1B79CEEA0027CCF0 /* 2010-10-09 14.56.59.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +237,7 @@
 				0FC1FBB31B4BB53300DFD7DA /* ViewController.swift in Sources */,
 				0FA433331B60C1900027CCF0 /* OtherViewController.swift in Sources */,
 				0FC1FBD11B52720400DFD7DA /* BigButtonView.swift in Sources */,
+				0FA4333F1B806C150027CCF0 /* DesertImageViewController.swift in Sources */,
 				0FA433351B6C0A1B0027CCF0 /* OtherTwoViewController.swift in Sources */,
 				0FA433391B75D7E90027CCF0 /* DrawCircleView.swift in Sources */,
 				0FA433371B6D7CF90027CCF0 /* DrawArchView.swift in Sources */,
